@@ -1,0 +1,288 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffd8e4;
+}
+
+.header {
+  display: flex;
+  background: linear-gradient(to right, #e91e63, #f06292);
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  justify-content: center;
+  text-align: center;
+}
+
+.titulo-principal {
+  font-size: 2.5em;
+  margin: 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.subtitulo {
+  font-size: 1.2em;
+  margin: 5px 0 0 0;
+  text-align: center;
+}
+
+.navegacion {
+  background-color: #940145;
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 10px 0;
+  margin: 0;
+  text-align: center;
+}
+
+.menu-item {
+  margin: 0 15px;
+  position: relative;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  background-color: #9c1b62;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.menu-item:hover .submenu {
+  display: block;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+}
+.slide {
+  min-width: 100%;
+    background: #ffd2e5;
+    padding: 100px 0;
+    text-align: center;
+    border-right: 2px solid white;
+
+}
+/*caja padre*/
+.contenedor-padre{
+    display: flex;
+    flex-direction:row; /*es otra forma de declarara la direccion si es que quiero que  sea columna normal*/
+    /*flex-direction: column-reverse;
+   /*declaro medids de la caja padre*/
+   /*width: 300px; puedo omitir el ancho, y asignarle tal a cada hijo 3*/
+   height: 350px;
+  
+   flex-wrap: wrap;
+   justify-content: space-evenly;/*(space-evenly: deja espacio de misma linutud entre cada caja hijo, space-around: deja un espazio pequeños al inicio y al final, entre medio deja el mismo espacio,space-between: al inicio y al fnal no deja espacio,miesntras entre cada elemento hijo deja el mismo espacio*/
+   align-items: center;
+ 
+  
+}
+.content-section{
+    background-color: #e91e63;
+   
+    border-radius: 15px;
+    border: #e91e63 double;
+display: flex;
+    width: 500px;/*(si pongo width 100% ocupara todo el ancho a excepcion de la 2*/
+   /* height: 300px;*/
+   height: 300px;
+   border: 2px solid rgb(184, 99, 132);
+   text-align: center;
+   align-items: center;
+   justify-content: center;}
+
+.texto-caja{
+  color: antiquewhite;
+  font-size: large;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* Secciones vacías */
+
+
+/*formulario*/
+.from-section{ 
+  
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+
+  padding: 30px;
+  background-color: rgb(250, 242, 207);
+}
+.form{
+ display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+ 
+.formulario-leyenda {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+input, textarea {
+    padding: 10px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+
+.boton-enviar {
+  display: flex;
+  justify-content: center;
+  background-color: #e91e63;
+  color: white;
+  height: 30px;
+  width: 90px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.boton-enviar:hover {
+  justify-content: center;
+ 
+}
+
+.articulo {
+  padding: 20px;
+  text-align: center;
+}
+
+.video{
+  width: auto;
+  height: auto;
+  
+  text-align: center;
+  justify-content: center;
+  border-radius: 20px;
+}
+
+.mapa {
+  width: 80%;
+  height: 300px;
+  border: 0;
+  border-radius: 10px;
+}
+/* ======= MEDIA QUERIES ======= */
+  /* ======= MEDIA QUERY PARA CELULARES ======= */
+@media (max-width: 600px) {
+  body {
+    font-size: 16px;
+  }
+
+  .header {
+    padding: 10px;
+    flex-direction: column;
+  }
+
+  .titulo-principal {
+    font-size: 1.8em;
+  }
+
+  .subtitulo {
+    font-size: 1em;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu-item {
+    margin: 10px 0;
+  }
+
+  .contenedor-padre {
+    flex-direction: column;
+    height: auto;
+    padding: 10px;
+  }
+
+  .content-section {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+    flex-direction: column;
+  }
+
+  .from-section {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .form {
+    width: 100%;
+    gap: 15px;
+  }
+
+  .boton-enviar {
+    width: 100%;
+    max-width: 150%;
+  }
+
+  .video,.mapa {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .social {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+  
+  
+   /* Footer */
+  .footer {
+    display: flex;
+    flex-direction: column;
+    background: #e91e63;
+    color: rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    gap: 10px;
+  }
+  .social{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction:row
+  
+  }
+  .redes{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
