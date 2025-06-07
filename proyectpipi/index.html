@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Estudia en casa</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body class="body">
+  <header class="header">
+    <h1 class="titulo-principal">ESTUDIA CONMIGO 🧠</h1>
+    <h2 class="subtitulo">Donde aprender nunca fue tan fácil</h2>
+  </header>
+
+  <nav class="navegacion">
+    <ul class="menu">
+      <li class="menu-item"><a href="./index.html">Inicio</a></li>
+      <li class="menu-item"><a href="./index1.html">Contactanos</a></li>
+      <li class="menu-item">
+        <a href="./index2.html">Modalidad</a>
+        <!--<ul class="submenu">
+          <li class="submenu-item"><a href="./index2.html">Online</a></li>
+          <li class="submenu-item"><a href="./index3.html">Presencial</a></li>
+        </ul>-->
+      </li>
+      <li class="menu-item">
+        <a href="./index3.html">Cursos</a>
+      <!-- <ul class="submenu">
+          <li class="submenu-item"><a href="#">Secundario</a></li>
+          <li class="submenu-item"><a href="#">Terciario</a></li>
+          <li class="submenu-item"><a href="#">Universitario</a></li>
+      </ul>-->
+      </li>
+     
+    </ul>
+  </nav>
+<!-- Crrusel de imagenes-->
+
+  <!--<section class="carousel">
+    <div class="slide">slide 1</div>
+    <div class="slide">slide 2</div>
+    <div class="slide">slide 3</div>
+    </section>-->
+
+
+    
+  <!--  <div id="carouselExampleAuto" class="carousel slide" data-bs-ride="carousel" data-interval="3000">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes y videos/people-2557396_640.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes y videos/sound-space-3851251_640.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes y videos/woman-1851464_640.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAuto" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAuto" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>-->
+
+    <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./imagenes y videos/people-2557396_640.jpg" class="d-block w-100" alt="primera">
+        </div>
+       
+        <div class="carousel-item">
+          <img src="./imagenes y videos/sound-space-3851251_640.jpg" class="d-block w-100" alt="segunda">
+        </div>
+        <div class="carousel-item">
+          <img src="./imagenes y videos/woman-1851464_640.jpg" class="d-block w-100" alt="tercera">
+        </div>
+        
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+
+
+    <!-- SECCIONES DE CONTENIDO -->
+     <section class="contenedor-padre">
+      <div class="content-section">
+        <h2 class="texto-caja"> <a href="./index4.html">SOBRE NOSOTROS</a>   </h2>
+        <img src="./imagenes y videos/icons8-scientist-64.png" alt="knowlegde">
+      </div>
+       <div class="content-section">
+            <article class="video">
+        <video src=""></video>
+       <code>video</code>
+       </article>
+      </div>
+  
+
+     </section>
+  
+  
+      
+
+      <!-- Formulario -->
+       <section class="from-section">
+      <form >
+        <legend class="formulario-leyenda"><strong> 📝  INFORMACIÓN PERSONAL</strong></legend>
+
+        <label>Curso:</label><br>
+        <input type="radio" name="producto" value="secundario"> Secundario
+        <input type="radio" name="producto" value="terciario"> Terciario
+        <input type="radio" name="producto" value="universitario"> Universitario<br><br>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" placeholder="Nombre">
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" placeholder="Apellido">
+
+        <label for="materias">Materias:</label>
+        <select id="materias" name="materias">
+          <option value="fisica">Física</option>
+          <option value="matematicas">Matemáticas</option>
+          <option value="quimica" selected>Química</option>
+          <option value="otras">Otras</option>
+        </select>
+
+        <input type="submit" value="Enviar" class="boton-enviar">
+      </form>
+     </section>
+    
+ 
+  <article class="articulo">
+    <h2 class="titulo-articulo">Nuestra Ubicación 📍</h2>
+    <iframe src="https://www.google.com/maps/embed?..." class="mapa"></iframe>
+  </article>
+  
+  <!-- PIE DE PÁGINA -->
+  <footer class="footer">
+    <div class="social">
+      <div class="redes">Intagram
+        <img src="./imagenes y videos/icons8-instagram-48.png" alt="iconoig">
+      </div>
+      <div class="redes">Facebook
+        <img src="./imagenes y videos/icons8-facebook-50.png" alt="iconofacebook">
+      </div>
+      <div class="redes">Linkedin
+        <img src="./imagenes y videos/icons8-linkedin-48.png" alt="iconolinkedin">
+      </div>
+      
+
+    </div>
+    
+  </footer>
+</body>
+</html>
